@@ -1,10 +1,17 @@
-# Prototype
-snippet proto
-	${1:class_name}.prototype.${2:method_name} =
-	function(${3:first_argument}) {
-		${4:// body...}
-	};
-# Function
+# require
+snippet req
+	var ${1:name} = require('${2:module}');
+
+# React component
+snippet comp
+	React.createClass({
+		displayName: '${1:name}',
+		render: function() {
+			return (
+			  ${2}
+			);
+		}
+	});
 snippet fun
 	function ${1:function_name} (${2:argument}) {
 		${3:// body...}
